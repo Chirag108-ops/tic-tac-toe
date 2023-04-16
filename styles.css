@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.wrapper{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(assets/gradient-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    max-height: 20rem;
+    max-width: 20rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.box{
+    flex-basis: calc(33.33%);
+    height: calc(33.33%);
+    cursor: pointer;
+    font-size: 3rem;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    display: none;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 3rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 2rem;
+    cursor:pointer;
+    color: white;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right:2px solid white;
+    border-bottom:2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right:2px solid white;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
+}
