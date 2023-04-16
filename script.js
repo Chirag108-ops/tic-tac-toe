@@ -33,6 +33,9 @@ function handleClick(index){
     filledBoxes++
     boxes[index].innerText = currentPlayer
     boxContent[index] = currentPlayer
+    let str = `.box${index+1}`
+    const bx = document.querySelector(str)
+    bx.style.pointerEvents = "none"
     let check = checkGameOver()
     if(check){
         btn.classList.add('active')
